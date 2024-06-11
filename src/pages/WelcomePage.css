@@ -1,0 +1,161 @@
+
+
+/* Welcome Page Container */
+.welcome-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:   #d7f9c7;;
+  ;
+}
+
+/* Welcome Page Content */
+.welcome-page {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #d7f9c7;;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+  animation: fade-in 0.5s ease-out;
+}
+
+.header .xpenser-text {
+  color: #708f5f; 
+  font-family : "Orbitron", sans-serif;
+font-weight: 400;
+} 
+
+.header .description {
+  font-size: 18px;
+  color: #666;
+  animation: fade-in 0.5s ease-out;
+} 
+/* Main Content */
+ .main-content {
+  margin-top: 30px;
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.illustration {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+} */
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  animation: fade-in 0.5s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+
+
+.add-button{
+  background-color: #fff;
+  padding: 0.5em 1.5em;
+  border-radius: 20em;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 100ms linear;
+  color: #0ebac5;
+  position: relative;
+  box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+  0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-top: 30px;
+  animation: slide-in 0.5s ease-out;
+
+}
+
+.add-button:active {
+  box-shadow: inset 0 0 0 4px #043b3f6b;
+}
+
+.add-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 201, 201, 0.804);
+  position: absolute;
+  border-radius: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  animation: flash 100ms ease-in-out;
+  transform: scaleX(2) scaleY(2);
+}
+
+.add-button:hover::before {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+@keyframes flash {
+  0%{
+      opacity: 1;
+      transform: translate(45px);
+  }
+  100%{
+      opacity: 0;
+      transform: translate(0);
+  }
+}
+
+
