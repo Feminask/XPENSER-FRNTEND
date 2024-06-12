@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import { IoWallet } from "react-icons/io5";
+// import { IoWallet } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 function Header() {
   return (

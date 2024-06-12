@@ -23,7 +23,7 @@ const Home = ({ expenses, fetchExpenses, deleteExpense }) => {
   return (
     <div className='home'>
       <Container className='p-5'>
-        <div className='button-section mt-5 row'>
+        {/* <div className='button-section mt-5 row'>
           <div className='col-md-6'>
             <div className='row'>
               <div className='col-12 col-md-6 mb-3 mb-md-0'>
@@ -44,12 +44,29 @@ const Home = ({ expenses, fetchExpenses, deleteExpense }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='mt-5'>
           <Row>
             <Col md={6}  data-aos="fade-right">
               <ExpenseCharts expenses={expenses} />
+            </Col>
+            <Col md={6}>
+<Container className='p-5'>
+              <Link style={{ textDecoration: 'none' }} to={'/add'}>
+                    <Button style={{ backgroundColor: '#557260', border: 'none' }} className='w-100 mt-5 ms-4'>
+                      <i className="fas fa-square-plus"></i>
+                      <span className='mx-2'>Add Expense</span>
+                    </Button>
+                    </Link>
+                    <Link to={'/search'}>
+                    <Button style={{ backgroundColor: '#557260', border: 'none' }} className="w-100 mt-5 ms-4">
+                      <i className="fas fa-search"></i>
+                      <span className='mx-2'>Search Expenses</span>
+                    </Button>
+                  </Link>
+  
+</Container>
             </Col>
           </Row>
         </div>

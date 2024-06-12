@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import PropTypes from 'prop-types';
 
 const ExpenseTable = ({ expenses, removeExpense }) => {

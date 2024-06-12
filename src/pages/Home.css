@@ -1,25 +1,5 @@
-/* .chart {
-    margin: 20px 0;
-  }
-   */
 
-   /* @media (min-width: 768px) {
-    .monthly-expense-chart-container {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-  } */
-  
-
-  /* @media (min-width: 768px) {
-    .monthly-expense-chart-container {
-      max-width: 100%;
-      height: 300px;
-    }
-  }
-   */
-
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
     .monthly-expense-chart-container {
       max-width: 100%;
       height: 300px;
@@ -31,4 +11,4 @@
       justify-content: space-between;
     }
   }
-  
+   

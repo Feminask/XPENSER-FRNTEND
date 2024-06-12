@@ -6,7 +6,6 @@ import "./Search.css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { FetchExpenseList, removeExpense } from "../redux/Action";
-import Card from 'react-bootstrap/Card';
 import Aos from 'aos';
     import 'aos/dist/aos.css'
 
@@ -165,3 +164,5 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchExpense);
+
+
